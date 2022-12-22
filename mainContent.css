@@ -1,0 +1,24 @@
+.mainContent{
+    width: calc(100vw - 280px);
+    padding: 20px;
+}
+
+.mainContent>div{
+    border-radius: 10px;
+
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 20px;
+}
+
+.small{
+    height: 100px;
+}
+
+.medium{
+    height: 300px;
+}
+
+.large{
+    height: 500px;
+}

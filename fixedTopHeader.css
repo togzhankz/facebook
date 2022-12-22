@@ -1,0 +1,65 @@
+.topHeaderSpace {
+  height: 56px;
+}
+
+.squareIcons {
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.squareIcons.active{
+    height: unset;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: 2px solid #1c74e4;
+    border-radius: 0;
+    align-self: stretch;
+    border-bottom: 3px solid #1c74e4;
+}
+
+.squareIcons:not(.active):hover{
+    background-color: #f2f2f2;
+}
+
+.fixedTopHeader {
+  z-index: 2;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.fixedTopHeader .iconGroup {
+  display: flex;
+  align-items: center;
+}
+
+.fixedTopHeader .iconGroup .notifications {
+  position: relative;
+}
+
+.fixedTopHeader .iconGroup .notifications .notificationCount {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #e51d3f;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
