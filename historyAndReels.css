@@ -1,0 +1,139 @@
+.historyAndReels .topSelector {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.historyAndReels .topSelector .selectorItem {
+  width: 30%;
+  height: 100%;
+  border-block: 3px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.historyAndReels .topSelector .selectorItem.active {
+  border-bottom: 4px solid #1c74e4;
+  color: #1c74e4;
+}
+
+.selectorItem .selectorButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.selectorItem:not(.active) .selectorButton:hover {
+  background-color: #f0f2f5;
+}
+
+.selectorButton > i {
+  margin-right: 10px;
+}
+.buttomContent{
+    position: relative;
+}
+.historyAndReels .container .next{
+    position: absolute;
+    right: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 50px;
+    height: 50px;
+    color: gray;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d5d5d557;
+    cursor: pointer;
+}
+.historyAndReels .container {
+
+  display: flex;
+  padding: 20px;
+  height: 100%;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.historyAndReels .container .cardHistory {
+  width: 100px;
+  height: 180px;
+  margin-right: 20px;
+  position: relative;
+  background-color: #f0f2f5;
+  border-radius: 10px;
+}
+
+.subtitle {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: white;
+
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.subtitle.history {
+  color: black;
+  white-space: normal;
+  text-align: center;
+}
+
+.imageContainer {
+  height: 120px;
+  width: 100px;
+
+  position: relative;
+}
+
+.addHistory {
+  height: 100%;
+}
+
+.plus {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 30px;
+  background-color: #1c74e4;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f0f2f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardHistory img {
+  border-radius: 10px;
+}
+.cardHistory .imageContainer img {
+  border-radius: 10px 10px 0 0;
+  height: 120px;
+  width: 100px;
+  object-fit: cover;
+}
